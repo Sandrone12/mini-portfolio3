@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alessandro — Mini Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER + NAVBAR STICKY -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Alessandro Fanfoni</h1>
+
+      <!-- NAVBAR: questi link ti portano alle sezioni della pagina -->
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="#top" class="nav-link">Home</a>
+        <a href="#progetti" class="nav-link">Progetti</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+      </nav>
+
+      <button id="themeToggle" aria-pressed="false">🌙 Tema scuro</button>
+    </div>
+  </header>
+
+  <!-- MAIN con id="top": serve per far funzionare il link "Home" -->
+  <main id="top" class="container">
+
+    <!-- Sezione HERO (presentazione iniziale) -->
+    <section class="hero">
+      <h2>Ciao! Costruiamo il tuo primo sito</h2>
+      <p>
+        Questo è il tuo primo progetto web: HTML per il contenuto, CSS per lo stile
+        e JavaScript per l'interattività.
+      </p>
+      <a class="cta" href="#progetti">Vedi i progetti</a>
+    </section>
+
+    <!-- Sezione PROGETTI: id usato dal link "Progetti" nella navbar -->
+    <section id="progetti" class="projects">
+      <h3>Progetti</h3>
+
+      <article class="card">
+        <h4>Mini Portfolio</h4>
+        <p>Una pagina semplice con tema chiaro/scuro.</p>
+      </article>
+
+      <article class="card">
+        <h4>Prossimo passo</h4>
+        <p>Una pagina con layout responsive e griglia.</p>
+      </article>
+    </section>
+
+    <!-- Sezione CONTATTI: id usato dal link "Contatti" nella navbar -->
+    <section id="contatti" class="contacts">
+      <h3>Contatti</h3>
+      <p>
+        Scrivimi qui:
+        <a href="mailto:tuoindirizzo@email.it">✉️ Invia email</a>
+      </p>
+
+      <!-- Immagine del profilo: hai scelto Opzione B, quindi cartella img/ -->
+      <img src="img/profile.jpg" alt="Foto di Alessandro" class="profile-pic">
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Alessandro Fanfoni — Tutti i diritti riservati</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
